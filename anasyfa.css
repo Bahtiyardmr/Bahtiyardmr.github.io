@@ -1,0 +1,696 @@
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 500% 500%;
+    animation: animeBG 2s linear infinite;
+    animation-direction:alternate;
+}
+@keyframes animeBG{
+    0%{background-position: 0%;}                                                                  
+    100%{background-position: 100%;}
+}   
+@media screen and (max-width: 774px) {
+    .main{flex-wrap: wrap;}
+    .box1{width: 100%;}
+}                                      
+.main{
+    margin: 10px auto;
+    width:100%;
+    height: 1500px;
+    display: flex;
+}
+.box1{
+    width: 400px;
+    height: 63.5%;
+    margin: 20px;;
+    background: linear-gradient(45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+    box-shadow:-10px 20px 15px black;
+
+}
+.name{
+    color: black;
+    font-weight: 800;
+    font-size: 25px;
+}
+.profil-box{
+    width: 100%;
+    height: 30%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profil{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+
+.icon-box{
+    width: 100%;
+    height: 10%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.icon{
+    width: 15%;
+    height: 50%;
+    border-radius: 50px;
+    box-shadow: -1px 15px 10px rgb(27, 26, 29);
+}
+.icon:hover{
+    width: 25%;
+    height: 90%;
+    transform: rotate(360deg);
+    transition: all 2s;
+}
+h2{
+    color: rgb(255, 244, 244);
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+}
+.header-box{
+    width: 100%;
+    height: 40%;
+    margin-top: 15px;
+    color: #fff;
+}
+/* about */
+.box2{
+    width: 90%;
+    height: 800px;
+    margin: 20px;
+    display: flex;
+    position: relative;
+}
+.box2-2{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    background-color: rgb(124, 49, 36);
+    border: 1px black solid;
+    animation: animebox2 5s ease-in-out  infinite;
+    opacity: 0.5;
+    
+}
+@keyframes animebox2{
+    0%{
+        transform: translate(500px) scale(1.2);
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+       
+    }
+    25%{
+        transform: translate(800px);
+        background-color: red;
+    }
+    50%{
+        transform:translate(600px, 600px);
+        background-color: gold;
+    }
+    75%{
+        transform: translate(0px,400px);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 71% 59%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+       
+    }
+    100%{
+        transform: translate(0px);
+        background-color: gray;
+    }
+
+}
+.box2-3{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    background-color: rgb(124, 49, 36);
+    border: 1px black solid;
+    animation: animebox3 5s ease-in-out  infinite;
+    opacity: 0.5;
+}
+
+@keyframes animebox3{
+    0%{
+        transform: translate(500px) scale(1.2);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+    25%{
+        transform: translate(800px) rotate(360deg);
+        background-color: red;
+        border-radius: 100px;
+    }
+    50%{
+        transform:translate(600px, 600px);
+        background-color: gold;
+        transition: all 2s;
+        
+    }
+    75%{
+        transform: translate(0px,400px)rotate(360deg);
+        background-color: green;
+    }
+    100%{
+        transform: translate(0px) rotate(360deg); 
+        background-color: gray;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+}
+
+.box2-4{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    background-color: rgb(124, 49, 36);
+    border: 1px black solid;
+    animation: animebox4 5s ease-in-out  infinite;
+    opacity: 0.5;
+}
+
+@keyframes animebox4{
+    0%{
+        transform: translate(0px);
+        background-color: gray;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+    25%{
+        transform: translate(800px);
+        background-color: red;
+        border-radius: 100px;
+    }
+    50%{
+        transform:translate(600px, 600px);
+        background-color: gold;
+        transform: rotate(360deg);
+        transition: all 2s;
+
+    }
+    75%{
+        transform: translate(0px,400px);
+        background-color: green;
+    }
+    100%{
+        transform: translate(500px) scale(1.2);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+
+}
+.box2-5{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    background-color: rgb(124, 49, 36);
+    border: 1px black solid;
+    animation: animebox5 5s ease-in-out  infinite;
+    opacity: 0.5;
+}
+@keyframes animebox5{
+    0%{
+        transform: translate(0px);
+        background-color: gray;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
+    25%{
+        transform: translate(600px) rotate(360deg);
+        background-color: red;
+        border-radius: 100px;
+    }
+    50%{
+        transform:translate(200px, 200px);
+        background-color: gold;
+        transform: rotate(360deg);
+        transition: all 2s;
+
+    }
+    75%{
+        transform: translate(0px,400px);
+        background-color: rgb(81, 175, 81);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(500px) scale(1) rotate(360deg);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+
+}
+
+h3{
+    margin-left: 10px;
+}
+
+h4{
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* anasayfakismi */
+.anasayfa-box{
+    width: 90px;
+    height: 50px;
+    transform: rotate(360deg);
+    transition: 2s;
+    overflow: hidden;
+    position: absolute;
+}
+.anasayfa-box:hover{
+    width: 90%;
+    height: 750px;
+    transform: rotate(360deg);
+    transition: all 2s;
+    background-color: rgb(221, 149, 149);
+    border: 10px black double;
+}
+.anasayfa-box:hover.ana{
+    color: blue;
+}
+.ana{
+    box-shadow: -10px 6px 6px black;
+    border: 1px black solid;
+    background-color: rgb(5, 14, 145);
+    color: rgb(255, 246, 246)
+}
+.p1{
+    text-align: center;
+}
+.p2{
+    text-align: center;
+}
+
+/* projeler kisimi  */
+
+.projeler-box{
+    width: 95px;
+    height: 50px;
+    transform: rotate(360deg);
+    transition: 2s;
+    overflow: hidden;
+    position: absolute;
+    left: 300px;
+}
+.projeler-box:hover{
+    width: 70%;
+    height: 750px;
+    background-color: rgb(145, 98, 11);
+    
+}
+.pro{
+    box-shadow: -10px 6px 6px black;
+    border: 1px black solid;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 246, 246);
+}
+.projeler{
+    width: 90%;
+    height: 90%;
+    margin: 20px auto;
+    border: 1px black solid;
+    background-color: rgb(28, 0, 80);
+    box-shadow: -15px -10px 15px black;
+}
+.projebox{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.proje1{
+    width: 300px;
+    height: 300px;
+    border: 1px black solid;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: -10px 10px 10px rgb(192, 140, 27);
+    
+}
+.proje1:hover{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(212, 28, 28);
+    box-shadow: -10px 10px 10px rgb(0, 0, 0);
+    transform: rotate(360deg);
+    transition: all 2s;
+    
+}
+.proje2{
+    width: 300px;
+    height: 300px;
+    border: 1px black solid;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: -10px 10px 10px rgb(192, 140, 27);
+}
+.proje2:hover{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(212, 28, 28);
+    box-shadow: -10px 10px 10px rgb(0, 0, 0);
+    transform: rotate(360deg);
+    transition: all 2s;
+    
+}
+
+.projebox1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.proje3{
+    width: 300px;
+    height: 300px;
+    border: 1px black solid;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: -10px 10px 10px rgb(192, 140, 27);
+}
+.proje3:hover{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(212, 28, 28);
+    box-shadow: -10px 10px 10px rgb(2, 2, 2);
+    transform: rotate(360deg);
+    transition: all 2s;
+    
+}
+.proje4{
+    width: 300px;
+    height: 300px;
+    border: 1px black solid;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: -10px 10px 10px rgb(192, 140, 27);
+}
+.proje4:hover{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(212, 28, 28);
+    box-shadow: -10px 10px 10px rgb(0, 0, 0);
+    transform: rotate(360deg);
+    transition: all 2s;
+    
+}
+
+
+/* profil kismi */
+.profl-box{
+    width: 95px;
+    height: 50px;
+    transform: rotate(360deg);
+    transition: 2s;
+    overflow: hidden;
+    position: absolute;
+    left: 200px;
+}
+.profl-box:hover{
+    width: 30%;
+    height: 750px;
+    transform: rotate(360deg);
+    transition: 2s;
+    background-color: rgb(153, 219, 127);
+    border: 2px rgb(201, 8, 8) solid;
+    border-radius: 50px;
+    
+}
+.prfl{
+    box-shadow: -10px 6px 6px black;
+    border: 1px black solid;
+    background-color: rgb(145, 5, 5);
+    color: rgb(255, 246, 246)
+}
+.yetenek{
+    width: 300px;
+    height: 20px;
+    border-radius:30px;
+    border: 1px black solid;
+    background-color: white;
+    overflow: hidden;
+    margin: 15px;
+}
+.yetenek1{
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    transition: all 3s;
+    
+}
+.yetenek>.yetenek1:hover{
+    width: 260px;
+    height: 20px;
+    color: gold;
+    text-align: end;
+    background-color: blue;
+}
+.yetenek2{
+    width: 300px;
+    height: 20px;
+    border-radius:30px;
+    border: 1px black solid;
+    background-color: white;
+    overflow: hidden;
+    margin: 15px;
+}
+.yetenek2-2{
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    transition: all 3s;
+    
+}
+.yetenek2>.yetenek2-2:hover{
+    width: 260px;
+    height: 20px;
+    color: gold;
+    text-align: end;
+    background-color: blue;
+}
+.yetenek3{
+    width: 300px;
+    height: 20px;
+    border-radius:30px;
+    border: 1px black solid;
+    background-color: white;
+    overflow: hidden;
+    margin: 15px;
+}
+.yetenek3-3{
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    transition: all 3s;
+    
+}
+.yetenek3>.yetenek3-3:hover{
+    width: 100px;
+    height: 20px;
+    color: gold;
+    text-align: end;
+    background-color: blue;
+}
+.yetenek4{
+    width: 300px;
+    height: 20px;
+    border-radius:30px;
+    border: 1px black solid;
+    background-color: white;
+    overflow: hidden;
+    margin: 15px;
+}
+.yetenek4-4{
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    transition: all 3s;
+    
+}
+.yetenek4>.yetenek4-4:hover{
+    width: 230px;
+    height: 20px;
+    color: gold;
+    text-align: end;
+    background-color: blue;
+}
+.yetenek5{
+    width: 300px;
+    height: 20px;
+    border-radius:30px;
+    border: 1px black solid;
+    background-color: white;
+    overflow: hidden;
+    margin: 15px;
+}
+.yetenek5-5{
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    transition: all 3s;
+    
+}
+.yetenek5>.yetenek5-5:hover{
+    width: 210px;
+    height: 20px;
+    color: gold;
+    text-align: end;
+    background-color: blue;
+}
+.yetenek6{
+    width: 300px;
+    height: 20px;
+    border-radius:30px;
+    border: 1px black solid;
+    background-color: white;
+    overflow: hidden;
+    margin: 15px;
+}
+.yetenek6-6{
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    transition: all 3s;
+    
+}
+.yetenek6>.yetenek6-6:hover{
+    width: 150px;
+    height: 20px;
+    color: gold;
+    text-align: end;
+    background-color: blue;
+}
+.yetenek7{
+    width: 300px;
+    height: 20px;
+    border-radius:30px;
+    border: 1px black solid;
+    background-color: white;
+    overflow: hidden;
+    margin: 15px;
+}
+.yetenek7-7{
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    transition: all 3s;
+    
+}
+.yetenek7>.yetenek7-7:hover{
+    width: 280px;
+    height: 20px;
+    color: gold;
+    text-align: end;
+    background-color: blue;
+}
+h5{
+    font-weight: 900;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+/* hakimda kismi  */
+.hakimda-box{
+    width: 95px;
+    height: 50px;
+    transform: rotate(360deg);
+    transition: 2s;
+    overflow: hidden;
+    position: absolute;
+    left: 100px;
+}
+.hakimda-box:hover{
+    width: 90%;
+    height: 800px;
+    transform: rotate(360deg);
+    transition: 2s;
+    background-color: rgb(150, 91, 145);
+    border: 10px black double;
+    
+}
+.hakim{
+    box-shadow: -10px 6px 6px black;
+    border: 1px black solid;
+    background-color: rgb(17, 145, 5);
+    color: rgb(255, 246, 246)
+}
+.p3{
+    text-align: center;
+}
+.hakimda-box img{
+    width: 885px; 
+    height: 385px;
+    border: 2px black solid;
+    border-radius: 20px;
+    box-shadow: -10px 10px 10px black;
+}
+.mainbox{
+    width: 900px;
+    height: 400px;
+    margin: 300px auto;
+    background-color: rgb(41, 38, 38);
+    box-shadow: -20px 20px 10px rgb(32, 15, 15);
+}
+.ucgen{
+    width: 900px;
+    height: 400px;
+    clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+    background-color: rgb(91, 109, 124);
+    opacity: 1;
+    
+}
+.mainbox:hover .ucgen{
+    transform:  translateY(-400px) rotate(-180deg);
+    background-color: rgb(91, 109, 124);
+    opacity: 2;
+}
+
+
+.ucgen-left-right{
+    width: 900px;
+    height: 400px;
+    clip-path: polygon(50% 97%, 100% 0, 100% 100%, 25% 100%, 0 100%, 0 0);
+    background-color: rgb(60, 63, 73);
+    transform: translateY(-400px)translateX(0.5px) ;
+}
+
+
+.card{
+    width: 885px;
+    height: 385px;
+    margin: 10px;   
+    transform: translateY(-400px);
+    position: absolute;
+    border-radius: 10px;
+    opacity: 0;
+}
+.mainbox:hover  .card{
+    transform: translateY(-750px) ;
+    transition: all 2s;
+    opacity: 1;
+    border-radius: 10px;
+    
+}
+
+
+
+img{
+    width: 885px;
+    height: 385px;
+    border-radius: 10px;
+}
+.card-text{
+    text-align: center;
+    font-weight: 800;
+    color: black;
+}
+
